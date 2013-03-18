@@ -52,7 +52,7 @@ class CyrLCD(object):
                 u'М' : u'\\x4d',
                 u'Н' : u'\\x48',
                 u'О' : u'\\x4f',
-                u'П' : u'\\xa7',
+                u'П' : u'\\xa8',
                 u'Р' : u'\\x50',
                 u'С' : u'\\x43',
                 u'Т' : u'\\x54',
@@ -93,5 +93,5 @@ class CyrLCD(object):
             for item in self.letters.items():
                 if int('0'+item[1][1:],16) == ord(char):
                     out.append(item[0])
-            
+
         return ''.join(out)
